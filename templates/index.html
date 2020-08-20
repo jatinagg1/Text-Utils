@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils</title>
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Text Utils</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+<strong>Welcome to Text Utils!</strong> You can do anything with your text here.
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+
+    <div class="container">
+        <form action='analyze' method='post'> {% csrf_token %}
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Enter your Text Here and let Text Utils do the magic!</label>
+    <textarea name='text' class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+  </div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" name="removepunc" class="custom-control-input" id="customSwitch1">
+  <label class="custom-control-label" for="customSwitch1">Remove Punctuations</label>
+</div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" name="fullcaps" class="custom-control-input" id="customSwitch2">
+  <label class="custom-control-label" for="customSwitch2">UPPERCASE</label>
+</div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" name="newlineremover" class="custom-control-input" id="customSwitch3">
+  <label class="custom-control-label" for="customSwitch3">New Line Remover</label>
+</div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" name="extraspaceremover" class="custom-control-input" id="customSwitch4">
+  <label class="custom-control-label" for="customSwitch4">Extra Space Remover</label>
+</div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" name="charcount" class="custom-control-input" id="customSwitch5">
+  <label class="custom-control-label" for="customSwitch5">Count Characters</label>
+</div>
+<button type="submit" class="btn btn-dark mt-3">Analyze Text</button>
+ </form>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
+</body>
+</html>
